@@ -1,0 +1,1941 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: digikala;
+
+  direction: rtl;
+}
+@font-face {
+  font-family: digikala;
+  src: url(../font/IRANYekanMedium.woff2);
+}
+@font-face {
+  font-family: shg;
+  src: url(../font/BYEKAN.woff2);
+}
+@media (min-width: 1480px) {
+  /*header*/
+  div.header {
+    width: 100%;
+    height: 68px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  div.header > img {
+    width: inherit;
+    object-fit: cover;
+  }
+  /*after header*/
+  div.afheader {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    background-color: #ffffff;
+    top: 65px;
+    justify-content: space-around;
+    z-index: 998;
+  }
+  div.item {
+    width: 60%;
+    height: inherit;
+    padding: 16px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  div.afheader > div.item > div.search {
+    width: 50%;
+    height: 44px;
+    background-color: #f0f0f1;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+  }
+  div.afheader > div.item > div.search > input {
+    flex-grow: 2;
+    background-color: unset;
+    border: unset;
+  }
+  div.afheader > div.submit {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.afheader > div.submit > a {
+    width: 90%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+  }
+  div.afheader > div.submit > a > div.shop {
+    display: flex;
+    width: max-content;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    align-items: center;
+    padding: 5px 25px;
+    gap: 5px;
+  }
+  div.afheader > div.submit > a > div.shop > p {
+    color: black;
+    font-size: 13px;
+  }
+  div.afheader > div.submit > a > div.box1 {
+    display: flex;
+    width: 20%;
+    justify-content: end;
+    align-items: center;
+    border-right: 1px solid rgb(184, 180, 180);
+    padding: 5px 10px;
+  }
+
+  /*menu*/
+  nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+  }
+  nav > div {
+    width: 85%;
+    height: inherit;
+    display: flex;
+  }
+  nav > div > div.menu {
+    flex-grow: 5;
+    display: flex;
+  }
+  nav > div > div.menu > ul {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  nav > div > div.menu > ul > li {
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+    gap: 5px;
+    padding: 1px;
+  }
+  nav > div > div.menu > ul > :nth-child(6) {
+    padding-left: 10px;
+  }
+  nav > div > div.menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+    transition: all 150ms linear;
+  }
+  nav > div > div.menu > ul > li:hover > a {
+    border-bottom: 2px solid red;
+  }
+  nav > div > div.menu > ul > :nth-child(6) {
+    border-left: 1px solid lightgrey;
+  }
+  nav > div > div.logo {
+    flex-grow: 2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  nav > div > div.logo > a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  /*story*/
+  div.top {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.top > div.item {
+    width: 80%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+  }
+
+  div.top > div.item > div {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+  }
+  div.top > div.item > div > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  div.top > div.item > div > a > img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 2px;
+  }
+  /*slider*/
+  .swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*body1*/
+  div.body1 {
+    width: 80%;
+    height: 100px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  div.body1 > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    gap: 5px;
+    vertical-align: top;
+  }
+  div.body1 > a > img {
+    width: 52px;
+    height: 52px;
+  }
+  div.body1 > :last-child img {
+    background-color: rgb(235, 232, 232);
+    border-radius: 50%;
+  }
+  /*shg slider*/
+  section.shg {
+    width: 80%;
+    background-color: #ef3c51;
+    padding: 15px;
+    margin: 25px auto;
+    border-radius: 25px;
+  }
+  .pshnhd {
+    background-color: unset;
+  }
+  div.pshnhd > img {
+    width: 55%;
+    display: inline-block;
+  }
+  div.pshnhd > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+  }
+  div.product {
+    padding: 10px;
+  }
+
+  div.product > img {
+    width: 100%;
+  }
+  div.product > div.price {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: space-around;
+    color: #4c4c57;
+  }
+  div.product > div.price > span {
+    background-color: #ef394e;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: shg;
+    border-radius: 25px;
+    color: white;
+  }
+  div.product > div.price img {
+    width: 15px;
+    object-fit: cover;
+  }
+  div.product > div.price > div.fprice {
+    display: flex;
+    align-items: center;
+  }
+  div.product > div.price > div.fprice > span {
+    font-family: shg;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  div.product > div.oldprice {
+    text-align: end;
+    padding-left: 25px;
+  }
+  div.product > div.oldprice > span {
+    font-family: shg;
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through 2px solid rgba(114, 114, 114, 0.644);
+  }
+  div.swiper-wrapper > :nth-child(2) {
+    border-radius: 0 20px 20px 0;
+  }
+  div.swiper-wrapper > :last-child {
+    border-radius: 20px 0 0 20px;
+  }
+  /*body2*/
+  a.body2 {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+  }
+  a.body2 > div.body2 {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 25px;
+    background-color: #971d84;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  div.body2 > div.item1 {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    gap: 20px;
+  }
+  div.body2 > div.item1 > div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  div.body2 > div.item1 > div.container > div.box2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  div.body2 > div.item2 {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+  }
+  div.body2 > div.item2 > div.box1 {
+    width: 12%;
+
+    display: flex;
+    position: relative;
+  }
+  div.body2 > div.item2 > div.box1 > img {
+    width: 90%;
+    border-radius: 50%;
+  }
+  div.body2 > div.item2 > div.box1 > span {
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    padding: 2px 4px;
+    font-family: shg;
+    border-radius: 10px;
+    background-color: #ef394e;
+    color: white;
+  }
+  div.body2 > div.item3 {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: white;
+    color: blueviolet;
+    padding: 20px;
+  }
+  /*body3*/
+  a.body3 {
+    width: 80%;
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+  }
+  div.body3 {
+    height: inherit;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 25px;
+    background-image: url(../media/background.svg);
+    background-repeat: no-repeat;
+    background-color: #edefed;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  div.body3 > div.item1 {
+    display: flex;
+    width: 40%;
+    justify-content: end;
+    gap: 20px;
+  }
+  div.body3 > div.item1 > div.box1 {
+    display: flex;
+    align-items: center;
+  }
+  div.body3 > div.item1 > div.box2 {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+  }
+  div.body3 > div.item1 > div.box2 > p {
+    background-color: #39ae00;
+    padding: 5px;
+    font-family: shg;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  div.body3 > div.item2 {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+  }
+  div.body3 > div.item2 > div.box1 {
+    width: 12%;
+
+    display: flex;
+    position: relative;
+  }
+  div.body3 > div.item2 > div.box1 > img {
+    width: 90%;
+    border-radius: 50%;
+  }
+  div.body3 > div.item2 > div.box1 > span {
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    font-family: shg;
+    padding: 2px 4px;
+    border-radius: 10px;
+    background-color: #ef394e;
+    color: white;
+  }
+  div.body3 > div.item3 {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    color: green;
+  }
+
+  /*photo1*/
+  div.photo {
+    width: 85%;
+    display: flex;
+    margin: 25px auto;
+    justify-content: center;
+  }
+  div.photo > a {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div.photo > a > img {
+    width: 24%;
+    border-radius: 25px;
+  }
+  /*dastebandi*/
+  div.ds {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    row-gap: 40px;
+    margin: 25px auto;
+  }
+  div.ds > h3 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  div.ds > a {
+    width: 85%;
+    height: 70%;
+    text-decoration: none;
+  }
+  div.ds > a > div.items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    row-gap: 30px;
+  }
+  div.ds > a > div.items > div.box {
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.ds > a > div.items > div.box > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  div.ds > a > div.items > div.box > p {
+    font-size: 12px;
+    color: black;
+  }
+  /*photo2*/
+  div.photo2 {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+  }
+  div.photo2 > a {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div.photo2 > a > img {
+    width: 49%;
+    border-radius: 20px;
+  }
+  /*pishnahad*/
+  div.psh {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px !important;
+    margin: 0 auto;
+  }
+  div.psh > h2 {
+    font-weight: 300;
+    font-size: 24px;
+  }
+  /*after pishnahad*/
+  div.afpsh {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.afpsh > a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    flex-wrap: wrap;
+    color: black;
+    justify-content: center;
+  }
+  div.afpsh > a > :nth-child(1) {
+    border-radius: 0 20px 0 0;
+  }
+  div.afpsh > a > :nth-child(7) {
+    border-radius: 20px 0 0 0;
+  }
+  div.afpsh > a > :nth-child(8) {
+    border-radius: 0 0 20px 0;
+  }
+  div.afpsh > a > :nth-child(14) {
+    border-radius: 0 0 0 20px;
+  }
+  div.afpsh > a > div.item {
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(218, 218, 218, 0.616);
+  }
+  div.afpsh > a > div.item > p {
+    font-size: 14px;
+  }
+
+  div.afpsh > a > div.item > div.item1 {
+    width: 50%;
+    display: flex;
+    object-fit: cover;
+    background-color: rgb(235, 235, 235);
+    justify-content: center;
+    border-radius: 50%;
+  }
+  div.afpsh > a > div.item > div.item1 > img {
+    width: 100%;
+    padding: 10px;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+  }
+  /*mahboob*/
+  div.mhb {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgba(92, 87, 87, 0.226);
+    border-radius: 20px;
+    row-gap: 20px;
+    right: 20px;
+    padding: 20px 0;
+  }
+  div.mhb > div.titr {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  div.mhb > div.titr > img {
+    object-fit: contain;
+    width: 30px;
+  }
+  div.mhb > div.titr > p {
+    font-size: 24px;
+  }
+  div.slider {
+    width: 100%;
+    display: flex;
+  }
+  div.slider > div.mySwiper3 {
+    width: 100%;
+    display: flex;
+  }
+  div.slider > div.mySwiper3 > div.swiper-wrapper {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+  div.slider > div.mySwiper3 > div.swiper-wrapper > div.swiper-slide {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+  div.slider > div.mySwiper3 > div.swiper-wrapper > div.swiper-slide > a {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-left: 2px solid rgba(94, 91, 91, 0.247);
+    align-items: center;
+    justify-content: center;
+  }
+  div.slider > div.mySwiper3 > div.swiper-wrapper > :last-child > a {
+    border: unset !important;
+  }
+  div.slider > div.mySwiper3 > div.swiper-wrapper > div.swiper-slide > a > img {
+    width: 70%;
+    object-fit: contain;
+  }
+  /*photo3*/
+
+  a.photo3 {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  a.photo3 > div.photo3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+  }
+  div.photo3 > img {
+    width: 49%;
+    border-radius: 25px;
+  }
+  div.body4 {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(190, 182, 182);
+    border-radius: 20px;
+  }
+  div.body4 > :nth-child(4) {
+    border: unset !important;
+  }
+
+  div.body4 > div.box {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgb(190, 182, 182);
+    row-gap: 10px;
+    padding: 10px;
+  }
+  div.body4 > div.box > h3 {
+    font-weight: lighter;
+  }
+  div.body4 > div.box > p {
+    font-size: 14px;
+  }
+
+  div.body4 > div.box > a {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.body4 > div.box > a > img {
+    width: 45%;
+    padding: 5px;
+  }
+  div.body4 > div.box > a > :nth-child(1) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+  }
+  div.body4 > div.box > a > :nth-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    border-right: 1px solid rgba(0, 0, 0, 0.199);
+  }
+  div.body4 > div.box > a > :nth-child(4) {
+    border-right: 1px solid rgba(0, 0, 0, 0.199);
+  }
+  div.body4 > div.box > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  div.body4 > div.box > div > a {
+    text-decoration: none;
+    color: rgb(30, 183, 221);
+  }
+  div.digiplus {
+    width: 80%;
+    height: 390px;
+    margin: 20px auto;
+    background-color: #941b80;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+  }
+  div.digiplus > div.box1 {
+    width: 33%;
+    background-image: url(../media/digiplus\ back.png);
+    background-size: 85%;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+  }
+  div.digiplus > div.box1 > div.item {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    row-gap: 10px;
+    flex-direction: column;
+  }
+  div.digiplus > div.box1 > div.item > p {
+    color: white;
+    font-size: 18px;
+  }
+  div.digiplus > div.box1 > div.item > :nth-child(3) {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 15px;
+    border-radius: 10px;
+  }
+  div.digiplus > div.box2 {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 0 20px 20px 0;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+  }
+  div.digiplus > div.box2 > div.item1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  div.digiplus > div.box2 > div.item1 > div.h1 {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+  }
+  div.digiplus > div.box2 > div.item1 > div.h1 > h4 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  div.digiplus > div.box2 > div.item1 > a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: blueviolet;
+  }
+  div.digiplus > div.box2 > div.item2 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  div.digiplus > div.box2 > div.item2 > a {
+    display: flex;
+    width: 28%;
+    height: 45%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.digiplus > div.box2 > div.item2 > a > img {
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  div.digiplus > div.box3 {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px 0 0 20px;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+  }
+  div.digiplus > div.box3 > div.item1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  div.digiplus > div.box3 > div.item1 > div.h1 {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+  }
+  div.digiplus > div.box3 > div.item1 > div.h1 > h4 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  div.digiplus > div.box3 > div.item1 > a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: blueviolet;
+  }
+  div.digiplus > div.box3 > div.item2 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  div.digiplus > div.box3 > div.item2 > a {
+    display: flex;
+    width: 28%;
+    height: 45%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.digiplus > div.box3 > div.item2 > a > img {
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+  }
+  div.digiclub {
+    width: 80%;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 10px auto;
+    background-image: linear-gradient(
+      to left,
+      #007295,
+      #1284a6,
+      #2fa0c2,
+      #35a6c8
+    );
+  }
+  div.digiclub > a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  div.digiclub > div.box {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: center;
+  }
+  div.digiclub > div.box > a.item1 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 0 10px 10px 0;
+    color: black;
+    background-color: white;
+  }
+  div.digiclub > div.box > a.item1 > div {
+    width: max-content;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+  }
+  div.digiclub > div.box > a.item1 > img {
+    width: 50%;
+    height: 65px;
+    padding: 3px;
+    object-fit: cover;
+  }
+  div.digiclub > div.box > a.item2 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+  }
+  div.digiclub > div.box > a.item2 > div {
+    width: max-content;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+  }
+  div.digiclub > div.box > a.item2 > img {
+    width: 50%;
+    height: 65px;
+    object-fit: cover;
+    padding: 3px;
+  }
+  div.digiclub > div.box > a.item3 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 10px 0 0 10px;
+    color: black;
+    background-color: white;
+  }
+  div.digiclub > div.box > a.item3 > div {
+    width: max-content;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+  }
+  div.digiclub > div.box > a.item3 > img {
+    width: 60%;
+    padding: 3px;
+    height: 65px;
+    object-fit: cover;
+  }
+
+  div.body5 {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(190, 182, 182);
+    border-radius: 20px;
+  }
+  div.body5 > :nth-child(4) {
+    border: unset !important;
+  }
+
+  div.body5 > div.box {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgb(190, 182, 182);
+    row-gap: 10px;
+    padding: 10px;
+  }
+  div.body5 > div.box > h3 {
+    font-weight: lighter;
+  }
+  div.body5 > div.box > p {
+    font-size: 14px;
+  }
+
+  div.body5 > div.box > a {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.body5 > div.box > a > img {
+    width: 45%;
+    padding: 5px;
+  }
+  div.body5 > div.box > a > :nth-child(1) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+  }
+  div.body5 > div.box > a > :nth-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    border-right: 1px solid rgba(0, 0, 0, 0.199);
+  }
+  div.body5 > div.box > a > :nth-child(4) {
+    border-right: 1px solid rgba(0, 0, 0, 0.199);
+  }
+  div.body5 > div.box > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  div.body5 > div.box > div > a {
+    text-decoration: none;
+    color: rgb(30, 183, 221);
+  }
+}
+/*responsive*/
+@media (min-width: 992px) and (max-width: 1480px) {
+  /*header*/
+  div.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  div.header > img {
+    width: inherit;
+    height: 60px;
+    object-fit: cover;
+  }
+  /*after header*/
+  div.afheader {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    background-color: #ffffff;
+    top: 60px;
+    z-index: 998;
+  }
+  div.item {
+    width: 95%;
+    height: inherit;
+    padding: 16px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  div.afheader > div.item > div.search {
+    width: 50%;
+    height: 44px;
+    background-color: #f0f0f1;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+  }
+  div.afheader > div.item > div.search > input {
+    flex-grow: 2;
+    background-color: unset;
+    border: unset;
+  }
+
+  div.afheader > div.submit {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.afheader > div.submit > a {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+  }
+  div.afheader > div.submit > a > div.shop {
+    display: flex;
+    width: max-content;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    align-items: center;
+    padding: 5px 25px;
+    gap: 5px;
+  }
+  div.afheader > div.submit > a > div.shop > p {
+    color: black;
+    font-size: 13px;
+  }
+  div.afheader > div.submit > a > div.box1 {
+    display: flex;
+    width: 20%;
+    justify-content: start;
+    align-items: center;
+    border-right: 1px solid rgb(184, 180, 180);
+    padding: 5px 5px;
+  }
+  /*menu*/
+  nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    justify-content: space-between;
+  }
+  nav > div {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav > div > div.menu {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  nav > div > div.menu > ul {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav > div > div.menu > ul > li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+  nav > div > div.menu > ul > li > a {
+    text-decoration: none;
+    width: fit-content;
+    display: flex;
+    color: black;
+    transition: all 150ms linear;
+    font-size: 13px;
+    padding: 5px;
+  }
+  nav > div > div.menu > ul > li:hover > a {
+    border-bottom: 2px solid red;
+  }
+  nav > div > div.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav > div > div.logo > a {
+    text-decoration: none;
+
+    color: black;
+    font-size: 12px;
+  }
+  /*story*/
+  div.top {
+    width: 100%;
+    margin: 25px auto;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.top > div.item {
+    width: 95%;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  div.top > div.item > div {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+  div.top > div.item > div > a {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  div.top > div.item > div > a > img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 2px;
+  }
+  /*slider*/
+  .swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*body1*/
+  div.body1 {
+    width: 80%;
+    height: 100px;
+    margin: 25px auto;
+    display: flex;
+    column-gap: 60px;
+    justify-content: space-around;
+    align-items: start;
+  }
+
+  div.body1 > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    gap: 10px;
+  }
+  div.body1 > a > img {
+    width: 60px;
+    height: 60px;
+  }
+  div.body1 > :last-child img {
+    background-color: rgb(235, 232, 232);
+    border-radius: 50%;
+  }
+
+  /*shg slider*/
+  section.shg {
+    width: 95%;
+    height: 300px;
+    background-color: #ef3c51;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    margin: 25px auto;
+    border-radius: 25px;
+  }
+  .pshnhd {
+    background-color: unset;
+  }
+  div.pshnhd > img {
+    width: 90%;
+    height: 40%;
+    object-fit: contain;
+    display: inline-block;
+  }
+  div.pshnhd > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+  }
+  div.product {
+    padding: 5px;
+  }
+
+  div.product > img {
+    width: 90%;
+    height: 70%;
+    display: inline-block;
+    object-fit: cover;
+  }
+  div.product > div.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #4c4c57;
+  }
+  div.product > div.price > span {
+    background-color: #ef394e;
+    padding: 2px 5px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: shg;
+    border-radius: 25px;
+    color: white;
+  }
+  div.product > div.price img {
+    width: 16px;
+    object-fit: cover;
+  }
+  div.product > div.price > div.fprice {
+    display: flex;
+    align-items: center;
+  }
+  div.product > div.price > div.fprice > span {
+    font-family: shg;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  div.product > div.oldprice {
+    text-align: end;
+    padding-left: 25px;
+  }
+  div.product > div.oldprice > span {
+    font-family: shg;
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through 2px solid rgba(114, 114, 114, 0.644);
+  }
+  div.swiper-wrapper > :nth-child(2) {
+    border-radius: 0 15px 15px 0;
+  }
+  div.swiper-wrapper > :last-child {
+    border-radius: 15px 0 0 15px;
+  }
+
+  /*body2*/
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  div.body2 {
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 25px;
+    background-color: #971d84;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  div.body2 > div.item1 {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    gap: 5px;
+  }
+  div.body2 > div.item1 > img {
+    width: 40px;
+  }
+  div.body2 > div.item1 > div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  div.body2 > div.item1 > div.container > div.box1 {
+    font-size: 15px;
+  }
+  div.body2 > div.item1 > div.container > div.box2 {
+    display: flex;
+    font-size: 15px;
+    width: 90%;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  div.body2 > div.item2 {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+  }
+  div.body2 > div.item2 > div.box1 {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  div.body2 > div.item2 > div.box1 > img {
+    width: 85%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  div.body2 > div.item2 > div.box1 > span {
+    position: absolute;
+    bottom: -12px;
+    font-size: 14px;
+    padding: 1px 3px;
+    font-family: shg;
+    border-radius: 10px;
+    background-color: #ef394e;
+    color: white;
+  }
+  div.body2 > div.item3 {
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: white;
+    color: blueviolet;
+    padding: 10px;
+  }
+  /*body3*/
+
+  a.body3 {
+    text-decoration: none;
+    color: white;
+  }
+  div.body3 {
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 25px;
+    background-color: #edefed;
+    background-image: url(../media/background.svg);
+    padding: 15px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div.body3 > div.item1 {
+    display: flex;
+    width: 45%;
+    justify-content: start;
+    gap: 5px;
+  }
+  div.body3 > div.item1 > img {
+    object-fit: cover;
+    width: max-content;
+  }
+  div.body3 > div.item1 > div.box1 {
+    display: flex;
+    align-items: center;
+  }
+  div.body3 > div.item1 > div.box1 > img {
+    object-fit: cover;
+    width: 100%;
+  }
+  div.body3 > div.item1 > div.box2 {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+  }
+  div.body3 > div.item1 > div.box2 > p {
+    background-color: #5cdd1c;
+    padding: 5px;
+    font-family: shg;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  div.body3 > div.item2 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  div.body3 > div.item2 > div.box1 {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  div.body3 > div.item2 > div.box1 > img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  div.body3 > div.item2 > div.box1 > span {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    font-size: 14px;
+    font-family: shg;
+    padding: 1px 3px;
+    border-radius: 10px;
+    background-color: #ef394e;
+    color: white;
+  }
+  div.body3 > div.item3 {
+    width: 15%;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    color: green;
+    padding: 20px;
+  }
+  div.photo {
+    width: 95%;
+    display: flex;
+    margin: 25px auto;
+    justify-content: center;
+  }
+  div.photo > a {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div.photo > a > img {
+    width: 24%;
+    border-radius: 25px;
+  }
+
+  div.ds {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    row-gap: 30px;
+    margin: 25px auto;
+  }
+  div.ds > h3 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  div.ds > a {
+    width: 100%;
+    height: 80%;
+  }
+  div.ds > a > div.items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    row-gap: 30px;
+  }
+  div.ds > a > div.items > div.box {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+  }
+  div.ds > a > div.items > div.box > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  div.ds > a > div.items > div.box > p {
+    font-size: 11px;
+    color: black;
+  }
+
+  div.photo2 {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+  }
+  div.photo2 > a {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div.photo2 > a > img {
+    width: 49%;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 750px) and (max-width: 992px) {
+  /*header*/
+  div.header {
+    width: 100%;
+    height: 35px;
+    top: 0;
+    display: inline-block;
+    z-index: 999;
+  }
+  div.header > img {
+    width: 100%;
+    height: 52px;
+    object-fit: cover;
+  }
+  /*after header*/
+  div.afheader {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    position: sticky;
+    background-color: #ffffff;
+    top: 0px;
+    z-index: 998;
+  }
+  div.item {
+    width: 80%;
+    height: inherit;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  div.item > img {
+    width: 20%;
+  }
+  div.afheader > div.item > div.search {
+    width: 85%;
+    height: 45px;
+    background-color: #f0f0f1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    gap: 7px;
+  }
+
+  div.afheader > div.item > div.search > input {
+    background-color: unset;
+    width: 100%;
+    height: inherit;
+    border: unset;
+  }
+
+  div.afheader > div.submit {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.afheader > div.submit > a {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+  }
+  div.afheader > div.submit > a > div.shop {
+    display: flex;
+    width: max-content;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    align-items: center;
+    padding: 5px 25px;
+    gap: 5px;
+  }
+  div.afheader > div.submit > a > div.shop > p {
+    color: black;
+    font-size: 13px;
+  }
+  div.afheader > div.submit > a > div.box1 {
+    display: flex;
+    width: 20%;
+    justify-content: end;
+    align-items: center;
+    border-right: 1px solid rgb(184, 180, 180);
+    padding: 5px 10px;
+  }
+  /*menu*/
+  nav {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+  }
+  nav > div {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: start;
+    column-gap: 15px;
+  }
+  nav > div > div.menu {
+    display: flex;
+    justify-content: center;
+  }
+  nav > div > div.menu > ul {
+    width: 98%;
+    display: flex;
+    justify-content: start;
+    row-gap: 18px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+  nav > div > div.menu > ul > li {
+    display: flex;
+    width: 30%;
+    list-style: none;
+    align-items: center;
+    font-size: 13px;
+    padding: 1px;
+    gap: 2px;
+  }
+  nav > div > div.menu > ul > li > img {
+    width: 15%;
+  }
+  nav > div > div.menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    transition: all 150ms linear;
+  }
+  nav > div > div.menu > ul > li:hover > a {
+    border-bottom: 2px solid red;
+  }
+  nav > div > div.logo {
+    height: 95%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  nav > div > div.logo > a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  /*story*/
+  div.top {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.top > div.item {
+    width: 96%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+  }
+
+  div.top > div.item > div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+  }
+  div.top > div.item > div > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  div.top > div.item > div > a > img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 2px;
+  }
+  /*slider*/
+  .swiper {
+    width: 100%;
+    height: 230px;
+    margin-top: 10px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*body1*/
+  div.body1 {
+    width: 95%;
+    height: 250px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    row-gap: 15px;
+  }
+
+  div.body1 > a {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    gap: 10px;
+  }
+  div.body1 > a > img {
+    width: 65px;
+    height: 65px;
+  }
+  div.body1 > :last-child img {
+    background-color: rgb(235, 232, 232);
+    border-radius: 50%;
+  }
+
+  /*shg slider*/
+  section.shg {
+    width: 90%;
+    background-color: #ef3c51;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    margin: 25px auto;
+    border-radius: 25px;
+  }
+  .pshnhd {
+    background-color: unset;
+  }
+  div.pshnhd > img {
+    width: 90%;
+    height: 35%;
+    display: inline-block;
+    object-fit: contain;
+  }
+  div.pshnhd > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+  }
+  div.product {
+    padding: 5px;
+  }
+  div.product > img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+  }
+  div.product > div.price {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: space-around;
+    color: #4c4c57;
+  }
+  div.product > div.price > span {
+    background-color: #ef394e;
+    padding: 3px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: shg;
+    border-radius: 25px;
+    color: white;
+  }
+  div.product > div.price img {
+    width: 15px;
+    object-fit: cover;
+  }
+  div.product > div.price > div.fprice {
+    display: flex;
+    align-items: center;
+  }
+  div.product > div.price > div.fprice > span {
+    font-family: shg;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  div.product > div.oldprice {
+    text-align: end;
+    padding-left: 5px;
+  }
+  div.product > div.oldprice > span {
+    font-family: shg;
+    font-size: 12px;
+    color: gray;
+    text-decoration: line-through 2px solid rgba(114, 114, 114, 0.644);
+  }
+  div.swiper-wrapper > :nth-child(2) {
+    border-radius: 0 20px 20px 0;
+  }
+  div.swiper-wrapper > :last-child {
+    border-radius: 20px 0 0 20px;
+  }
+}
